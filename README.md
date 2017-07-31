@@ -5,7 +5,12 @@
 ```linux
 git clone https://github.com/hteen/docker-ngrok.git
 cd docker-ngrok
-docker build -t hteen/ngrok .
+
+docker build -t zhangll/ngrok .
+
+docker run --rm -it -e DOMAIN="k.bestsrc.com" -v /data/ngrok:/myfiles zhangll/ngrok /bin/sh /build.sh
+
+
 ```
 
 ## RUN
